@@ -63,8 +63,9 @@ const OncologyLandingPage = () => {
             
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Transform Your Oncology Care Through{" "}
-              <span className="text-primary">Evidence-Based Excellence</span>
+              <span className="text-primary">Better Systems.</span>{" "}
+              <span className="text-secondary">Braver Culture.</span>{" "}
+              <span className="text-accent">Human-Centered Care.</span>
             </h1>
             
             <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
