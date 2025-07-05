@@ -146,11 +146,11 @@ const OncologyLandingPage = () => {
                 </h2>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
                 {/* Immediate Impact Areas */}
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-4">Immediate Impact Areas:</h3>
-                  <ul className="space-y-3 text-muted-foreground">
+                  <h3 className="text-xl font-semibold text-foreground mb-6">Immediate Impact Areas:</h3>
+                  <ul className="space-y-4 text-muted-foreground">
                     <li className="flex items-start">
                       <TrendingUp className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
                       <span><strong className="text-foreground">Patient Satisfaction Scores</strong> → Direct HCAHPS improvement</span>
@@ -172,8 +172,8 @@ const OncologyLandingPage = () => {
 
                 {/* Proven Implementation Approach */}
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-4">Proven Implementation:</h3>
-                  <ul className="space-y-3 text-muted-foreground">
+                  <h3 className="text-xl font-semibold text-foreground mb-6">Proven Implementation:</h3>
+                  <ul className="space-y-4 text-muted-foreground">
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
                       <span><strong className="text-foreground">22 years frontline experience</strong> at academic medical center</span>
@@ -191,16 +191,6 @@ const OncologyLandingPage = () => {
                       <span><strong className="text-foreground">Behavioral neuroscience background</strong> for evidence-based solutions</span>
                     </li>
                   </ul>
-                </div>
-
-                {/* Executive ROI Promise */}
-                <div className="lg:col-span-1">
-                  <h3 className="text-xl font-semibold text-foreground mb-4">Executive ROI Promise:</h3>
-                  <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                    <p className="text-muted-foreground italic leading-relaxed">
-                      "Every initiative I implement is designed to improve your key performance indicators while enhancing the patient and staff experience. My 22 years of proven results speak to my ability to deliver measurable improvements that directly impact your organization's success."
-                    </p>
-                  </div>
                 </div>
               </div>
 
