@@ -146,80 +146,60 @@ const OncologyLandingPage = () => {
                 </h2>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
                 {/* Immediate Impact Areas */}
-                <div className="space-y-6">
-                  <div className="text-center lg:text-left">
-                    <h3 className="text-2xl font-semibold text-foreground mb-2">Immediate Impact Areas</h3>
-                    <div className="w-16 h-1 bg-primary mx-auto lg:mx-0 mb-6"></div>
-                  </div>
-                  <div className="grid gap-4">
-                    <div className="flex items-start p-4 bg-card/40 rounded-lg border border-border/50">
-                      <TrendingUp className="h-6 w-6 text-primary mt-1 mr-4 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Patient Satisfaction Scores</h4>
-                        <p className="text-sm text-muted-foreground">Direct HCAHPS improvement</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start p-4 bg-card/40 rounded-lg border border-border/50">
-                      <Users className="h-6 w-6 text-primary mt-1 mr-4 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Staff Retention Rates</h4>
-                        <p className="text-sm text-muted-foreground">Reduced recruitment and training costs</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start p-4 bg-card/40 rounded-lg border border-border/50">
-                      <Shield className="h-6 w-6 text-primary mt-1 mr-4 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Regulatory Compliance</h4>
-                        <p className="text-sm text-muted-foreground">Maintained accreditation status</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start p-4 bg-card/40 rounded-lg border border-border/50">
-                      <CheckCircle className="h-6 w-6 text-primary mt-1 mr-4 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Operational Efficiency</h4>
-                        <p className="text-sm text-muted-foreground">Optimized patient throughput</p>
-                      </div>
-                    </div>
-                  </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Immediate Impact Areas:</h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start">
+                      <TrendingUp className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">Patient Satisfaction Scores</strong> → Direct HCAHPS improvement</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Users className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">Staff Retention Rates</strong> → Reduced recruitment and training costs</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Shield className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">Regulatory Compliance</strong> → Maintained accreditation status</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">Operational Efficiency</strong> → Optimized patient throughput</span>
+                    </li>
+                  </ul>
                 </div>
 
                 {/* Proven Implementation Approach */}
-                <div className="space-y-6">
-                  <div className="text-center lg:text-left">
-                    <h3 className="text-2xl font-semibold text-foreground mb-2">Proven Implementation</h3>
-                    <div className="w-16 h-1 bg-primary mx-auto lg:mx-0 mb-6"></div>
-                  </div>
-                  <div className="grid gap-4">
-                    <div className="flex items-start p-4 bg-card/40 rounded-lg border border-border/50">
-                      <CheckCircle className="h-6 w-6 text-primary mt-1 mr-4 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">22 Years Frontline Experience</h4>
-                        <p className="text-sm text-muted-foreground">Academic medical center expertise</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start p-4 bg-card/40 rounded-lg border border-border/50">
-                      <Award className="h-6 w-6 text-primary mt-1 mr-4 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">OCN Certification</h4>
-                        <p className="text-sm text-muted-foreground">Specialized oncology expertise</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start p-4 bg-card/40 rounded-lg border border-border/50">
-                      <TrendingUp className="h-6 w-6 text-primary mt-1 mr-4 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Process Improvement Training</h4>
-                        <p className="text-sm text-muted-foreground">Measurable outcomes focus</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start p-4 bg-card/40 rounded-lg border border-border/50">
-                      <Heart className="h-6 w-6 text-primary mt-1 mr-4 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Behavioral Neuroscience</h4>
-                        <p className="text-sm text-muted-foreground">Evidence-based solutions</p>
-                      </div>
-                    </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Proven Implementation:</h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">22 years frontline experience</strong> at academic medical center</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Award className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">OCN certification</strong> with specialized oncology expertise</span>
+                    </li>
+                    <li className="flex items-start">
+                      <TrendingUp className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">Process improvement training</strong> with measurable outcomes</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Heart className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">Behavioral neuroscience background</strong> for evidence-based solutions</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Executive ROI Promise */}
+                <div className="lg:col-span-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Executive ROI Promise:</h3>
+                  <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
+                    <p className="text-muted-foreground italic leading-relaxed">
+                      "Every initiative I implement is designed to improve your key performance indicators while enhancing the patient and staff experience. My 22 years of proven results speak to my ability to deliver measurable improvements that directly impact your organization's success."
+                    </p>
                   </div>
                 </div>
               </div>
