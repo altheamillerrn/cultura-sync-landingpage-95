@@ -246,7 +246,7 @@ const OncologyLandingPage = () => {
       
 
       {/* Consultation Form Section */}
-      <section id="consultation-form" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      <section id="consultation-form" className="py-20 px-4 sm:px-6 lg:px-8 bg-accent/10 border-t border-border">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
@@ -257,7 +257,9 @@ const OncologyLandingPage = () => {
             </p>
           </div>
           
-          <ConsultationForm />
+          <div className="w-full">
+            <ConsultationForm />
+          </div>
         </div>
       </section>
 
