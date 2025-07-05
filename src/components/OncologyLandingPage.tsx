@@ -4,75 +4,58 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ConsultationForm } from "./ConsultationForm";
 import { ChevronDown, CheckCircle, Users, Heart, TrendingUp, Shield, Award, ArrowRight } from "lucide-react";
-
 const OncologyLandingPage = () => {
   const scrollToForm = () => {
     const formElement = document.getElementById('consultation-form');
-    formElement?.scrollIntoView({ behavior: 'smooth' });
+    formElement?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  const valuePropositions = [
-    {
-      icon: TrendingUp,
-      title: "High-Volume Operations Excellence",
-      description: "22 years managing complex cancer care operations with proven capacity optimization",
-      metrics: "140 patients daily • 58-chair suite • 20+ staff",
-      highlight: "Operational efficiency that impacts your bottom line",
-      executiveBenefit: "Proven ability to optimize capacity, streamline workflows, and maintain quality at scale"
-    },
-    {
-      icon: Heart,
-      title: "Evidence-Based Patient Education Systems",
-      description: "Comprehensive pre-infusion education program transforming patient experience",
-      metrics: "45-minute appointments • Measurable satisfaction increases",
-      highlight: "From deep anxiety to confidence transformation",
-      executiveBenefit: "Higher HCAHPS ratings = increased reimbursements"
-    },
-    {
-      icon: Shield,
-      title: "Regulatory Compliance & Quality Assurance",
-      description: "Meeting critical accreditation standards with systematic distress screening",
-      metrics: "80% distress identification • Mandatory compliance since 2015",
-      highlight: "Evidence-based screening protocols",
-      executiveBenefit: "Maintain accreditation, avoid penalties, demonstrate quality metrics"
-    },
-    {
-      icon: Users,
-      title: "Staff Retention & Workplace Innovation",
-      description: "Evidence-based wellness solutions reducing turnover through workplace innovation",
-      metrics: "Zen Zone implementation • Measurable stress reduction",
-      highlight: "Improved workplace satisfaction",
-      executiveBenefit: "Reduced recruitment costs, lower turnover rates, improved engagement"
-    },
-    {
-      icon: CheckCircle,
-      title: "Patient Safety & Emergency Protocols",
-      description: "Proactive communication systems preventing complications and improving outcomes",
-      metrics: "Neutropenic Fever Alert system • Enhanced ER protocols",
-      highlight: "Improved safety metrics",
-      executiveBenefit: "Reduced liability, fewer complications, improved patient safety"
-    },
-    {
-      icon: Award,
-      title: "Strategic Partnership & Resource Development",
-      description: "Community partnerships enhancing patient care through comprehensive support programs",
-      metrics: "Port Shirts program • Food insecurity screening",
-      highlight: "Differentiated care offerings",
-      executiveBenefit: "Enhanced reputation, patient loyalty, community relations"
-    }
-  ];
-
-  const socialProofItems = [
-    "22 years oncology nursing experience at academic medical center",
-    "OCN-certified with transformative leadership training", 
-    "Proven pre-infusion education program reducing patient anxiety",
-    "EHR super-user with process improvement expertise",
-    "Behavioral neuroscience approach to patient care",
-    "Published presenter on distress management and relational neuroscience"
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const valuePropositions = [{
+    icon: TrendingUp,
+    title: "High-Volume Operations Excellence",
+    description: "22 years managing complex cancer care operations with proven capacity optimization",
+    metrics: "140 patients daily • 58-chair suite • 20+ staff",
+    highlight: "Operational efficiency that impacts your bottom line",
+    executiveBenefit: "Proven ability to optimize capacity, streamline workflows, and maintain quality at scale"
+  }, {
+    icon: Heart,
+    title: "Evidence-Based Patient Education Systems",
+    description: "Comprehensive pre-infusion education program transforming patient experience",
+    metrics: "45-minute appointments • Measurable satisfaction increases",
+    highlight: "From deep anxiety to confidence transformation",
+    executiveBenefit: "Higher HCAHPS ratings = increased reimbursements"
+  }, {
+    icon: Shield,
+    title: "Regulatory Compliance & Quality Assurance",
+    description: "Meeting critical accreditation standards with systematic distress screening",
+    metrics: "80% distress identification • Mandatory compliance since 2015",
+    highlight: "Evidence-based screening protocols",
+    executiveBenefit: "Maintain accreditation, avoid penalties, demonstrate quality metrics"
+  }, {
+    icon: Users,
+    title: "Staff Retention & Workplace Innovation",
+    description: "Evidence-based wellness solutions reducing turnover through workplace innovation",
+    metrics: "Zen Zone implementation • Measurable stress reduction",
+    highlight: "Improved workplace satisfaction",
+    executiveBenefit: "Reduced recruitment costs, lower turnover rates, improved engagement"
+  }, {
+    icon: CheckCircle,
+    title: "Patient Safety & Emergency Protocols",
+    description: "Proactive communication systems preventing complications and improving outcomes",
+    metrics: "Neutropenic Fever Alert system • Enhanced ER protocols",
+    highlight: "Improved safety metrics",
+    executiveBenefit: "Reduced liability, fewer complications, improved patient safety"
+  }, {
+    icon: Award,
+    title: "Strategic Partnership & Resource Development",
+    description: "Community partnerships enhancing patient care through comprehensive support programs",
+    metrics: "Port Shirts program • Food insecurity screening",
+    highlight: "Differentiated care offerings",
+    executiveBenefit: "Enhanced reputation, patient loyalty, community relations"
+  }];
+  const socialProofItems = ["22 years oncology nursing experience at academic medical center", "OCN-certified with transformative leadership training", "Proven pre-infusion education program reducing patient anxiety", "EHR super-user with process improvement expertise", "Behavioral neuroscience approach to patient care", "Published presenter on distress management and relational neuroscience"];
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -92,22 +75,12 @@ const OncologyLandingPage = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                size="lg" 
-                variant="cta"
-                onClick={scrollToForm}
-                className="px-8 py-6 text-lg font-semibold"
-              >
+              <Button size="lg" variant="cta" onClick={scrollToForm} className="px-8 py-6 text-lg font-semibold">
                 Schedule Your Oncology Excellence Assessment
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               
-              <Button 
-                variant="outline" 
-                size="lg"
-                onClick={scrollToForm}
-                className="px-8 py-6 text-lg"
-              >
+              <Button variant="outline" size="lg" onClick={scrollToForm} className="px-8 py-6 text-lg">
                 Learn More
                 <ChevronDown className="ml-2 h-5 w-5" />
               </Button>
@@ -130,9 +103,8 @@ const OncologyLandingPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {valuePropositions.map((prop, index) => {
-              const Icon = prop.icon;
-              return (
-                <Card key={index} className="h-full hover:shadow-lg transition-shadow duration-300 border-0 bg-card/60 backdrop-blur-sm">
+            const Icon = prop.icon;
+            return <Card key={index} className="h-full hover:shadow-lg transition-shadow duration-300 border-0 bg-card/60 backdrop-blur-sm">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <div className="p-3 bg-primary/10 rounded-lg mr-4">
@@ -157,9 +129,8 @@ const OncologyLandingPage = () => {
                       <p className="text-sm text-muted-foreground mt-1">{prop.executiveBenefit}</p>
                     </div>
                   </CardContent>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
         </div>
       </section>
@@ -234,12 +205,7 @@ const OncologyLandingPage = () => {
               </div>
 
               <div className="text-center">
-                <Button 
-                  variant="cta" 
-                  size="lg"
-                  onClick={scrollToForm}
-                  className="px-8 py-4"
-                >
+                <Button variant="cta" size="lg" onClick={scrollToForm} className="px-8 py-4">
                   Schedule Your Strategic Assessment
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -276,12 +242,7 @@ const OncologyLandingPage = () => {
               </p>
               
               <div className="text-center">
-                <Button 
-                  variant="cta" 
-                  size="lg"
-                  onClick={scrollToForm}
-                  className="px-8 py-4"
-                >
+                <Button variant="cta" size="lg" onClick={scrollToForm} className="px-8 py-4">
                   Start Your Transformation Journey
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -292,27 +253,7 @@ const OncologyLandingPage = () => {
       </section>
 
       {/* Social Proof */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent/20">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Proven Track Record of Excellence
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Credentials and achievements that speak to measurable impact
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {socialProofItems.map((item, index) => (
-              <div key={index} className="flex items-start space-x-3">
-                <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                <p className="text-foreground font-medium">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Consultation Form Section */}
       <section id="consultation-form" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -349,8 +290,6 @@ const OncologyLandingPage = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default OncologyLandingPage;
