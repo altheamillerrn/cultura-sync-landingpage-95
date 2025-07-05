@@ -90,50 +90,7 @@ const OncologyLandingPage = () => {
       </section>
 
       {/* Value Propositions */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent/20">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Proven Results That Drive Hospital Performance
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Evidence-based solutions with measurable impact on your key performance indicators
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {valuePropositions.map((prop, index) => {
-            const Icon = prop.icon;
-            return <Card key={index} className="h-full hover:shadow-lg transition-shadow duration-300 border-0 bg-card/60 backdrop-blur-sm">
-                  <CardContent className="p-6">
-                    <div className="flex items-center mb-4">
-                      <div className="p-3 bg-primary/10 rounded-lg mr-4">
-                        <Icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <Badge variant="outline" className="text-xs font-medium">
-                        {prop.highlight}
-                      </Badge>
-                    </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-3">
-                      {prop.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      {prop.description}
-                    </p>
-                    <div className="mb-4">
-                      <p className="text-sm font-semibold text-primary mb-2">Key Metrics:</p>
-                      <p className="text-sm text-muted-foreground">{prop.metrics}</p>
-                    </div>
-                    <div className="pt-4 border-t border-border">
-                      <p className="text-sm font-medium text-foreground">Executive Benefit:</p>
-                      <p className="text-sm text-muted-foreground mt-1">{prop.executiveBenefit}</p>
-                    </div>
-                  </CardContent>
-                </Card>;
-          })}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Executive ROI Summary */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
