@@ -234,7 +234,7 @@ const OncologyLandingPage = () => {
               Transforming Cancer Care Through Evidence-Based Excellence
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-primary transition-colors">LinkedIn Profile</a>
+              <a href="https://www.linkedin.com/in/althea-miller/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn Profile</a>
               <a href="#" className="hover:text-primary transition-colors">Professional Speaking</a>
               <a href="#" className="hover:text-primary transition-colors">Continuing Education Resources</a>
               <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
