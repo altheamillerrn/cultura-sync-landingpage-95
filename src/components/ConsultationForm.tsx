@@ -154,7 +154,7 @@ export const ConsultationForm = () => {
           Get Your Personalized Assessment
         </CardTitle>
         <p className="text-center text-muted-foreground">
-          Share your information to schedule a consultation with Althea
+          Share your information to schedule a consultation with our CuraSync team
         </p>
       </CardHeader>
       <CardContent>

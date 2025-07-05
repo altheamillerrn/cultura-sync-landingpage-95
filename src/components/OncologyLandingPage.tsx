@@ -97,7 +97,7 @@ const OncologyLandingPage = () => {
             <CardContent className="p-8 sm:p-12">
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-                  Why Hospital Executives Choose Althea Miller Consulting
+                  Why Hospital Executives Choose CuraSync
                 </h2>
               </div>
 
@@ -228,7 +228,7 @@ const OncologyLandingPage = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center">
             <h3 className="text-xl font-semibold text-foreground mb-4">
-              Althea Miller Consulting
+              CuraSync
             </h3>
             <p className="text-muted-foreground mb-6">
               Transforming Cancer Care Through Evidence-Based Excellence
