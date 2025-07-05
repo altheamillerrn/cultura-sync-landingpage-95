@@ -169,23 +169,28 @@ const OncologyLandingPage = () => {
             <CardContent className="p-8 sm:p-12">
               <div className="text-center mb-8">
                 <Badge variant="secondary" className="mb-4 px-4 py-2">
-                  Clinical Excellence & Leadership
+                  Our Story
                 </Badge>
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-                  22 Years of Transformative Oncology Experience
+                  From Bedside to Systems: A Journey of Impact
                 </h2>
               </div>
               
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                As an OCN-certified nurse with 22 years at University of Iowa Health Care's academic medical center, 
-                I've seen firsthand how the right systems transform both patient outcomes and staff satisfaction. 
-                My unique combination of clinical expertise, behavioral neuroscience background, and process improvement 
-                training helps oncology teams create sustainable change.
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                I'm an Oncology Certified Nurse with 22 years of experience and a lifelong commitment to care that truly changes lives. 
+                I've walked with patients through uncertainty, with staff through burnout, and with systems through change.
+              </p>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Early in my career, I focused on direct impact: one patient at a time through clear education, emotional presence, 
+                and advocacy in the hardest moments. Over time, I realized my impact didn't stop at the bedside.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                From developing pre-infusion education programs that measurably reduce patient anxiety to implementing 
-                EHR optimizations that improve workflow efficiency, I partner with cancer centers to build excellence that lasts.
+                Now I lead improvements in distress screening, create pre-infusion education systems, and build cross-disciplinary 
+                relationships that elevate care for every patient. I'm passionate about relational neuroscience, process improvement, 
+                and building healthcare spaces where compassion flows in every direction—because when systems support people emotionally, 
+                operationally, and equitably, everything improves.
               </p>
               
               <div className="text-center">
