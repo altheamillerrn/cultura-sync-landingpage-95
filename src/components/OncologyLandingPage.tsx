@@ -13,40 +13,52 @@ const OncologyLandingPage = () => {
 
   const valuePropositions = [
     {
-      icon: Heart,
-      title: "Patient Education Mastery",
-      description: "Reduce patient anxiety by 40% with our proven pre-infusion education programs",
-      highlight: "40% anxiety reduction"
-    },
-    {
-      icon: Users,
-      title: "Care Coordination Excellence", 
-      description: "Streamline interdisciplinary communication and eliminate care gaps",
-      highlight: "Eliminate care gaps"
-    },
-    {
       icon: TrendingUp,
-      title: "Staff Retention Solutions",
-      description: "Create supportive work environments that reduce turnover and improve team satisfaction",
-      highlight: "Reduced turnover"
+      title: "High-Volume Operations Excellence",
+      description: "22 years managing complex cancer care operations with proven capacity optimization",
+      metrics: "140 patients daily • 58-chair suite • 20+ staff",
+      highlight: "Operational efficiency that impacts your bottom line",
+      executiveBenefit: "Proven ability to optimize capacity, streamline workflows, and maintain quality at scale"
+    },
+    {
+      icon: Heart,
+      title: "Evidence-Based Patient Education Systems",
+      description: "Comprehensive pre-infusion education program transforming patient experience",
+      metrics: "45-minute appointments • Measurable satisfaction increases",
+      highlight: "From deep anxiety to confidence transformation",
+      executiveBenefit: "Higher HCAHPS ratings = increased reimbursements"
     },
     {
       icon: Shield,
-      title: "Distress Screening Optimization",
-      description: "Implement evidence-based screening that actually improves patient outcomes",
-      highlight: "Evidence-based screening"
+      title: "Regulatory Compliance & Quality Assurance",
+      description: "Meeting critical accreditation standards with systematic distress screening",
+      metrics: "80% distress identification • Mandatory compliance since 2015",
+      highlight: "Evidence-based screening protocols",
+      executiveBenefit: "Maintain accreditation, avoid penalties, demonstrate quality metrics"
     },
     {
-      icon: Award,
-      title: "Quality Improvement Systems",
-      description: "Develop measurable protocols that enhance both clinical excellence and patient experience",
-      highlight: "Measurable protocols"
+      icon: Users,
+      title: "Staff Retention & Workplace Innovation",
+      description: "Evidence-based wellness solutions reducing turnover through workplace innovation",
+      metrics: "Zen Zone implementation • Measurable stress reduction",
+      highlight: "Improved workplace satisfaction",
+      executiveBenefit: "Reduced recruitment costs, lower turnover rates, improved engagement"
     },
     {
       icon: CheckCircle,
-      title: "Trauma-Informed & Inclusive Care",
-      description: "Build LGBTQI+ affirming practices and trauma-informed care protocols",
-      highlight: "Inclusive care protocols"
+      title: "Patient Safety & Emergency Protocols",
+      description: "Proactive communication systems preventing complications and improving outcomes",
+      metrics: "Neutropenic Fever Alert system • Enhanced ER protocols",
+      highlight: "Improved safety metrics",
+      executiveBenefit: "Reduced liability, fewer complications, improved patient safety"
+    },
+    {
+      icon: Award,
+      title: "Strategic Partnership & Resource Development",
+      description: "Community partnerships enhancing patient care through comprehensive support programs",
+      metrics: "Port Shirts program • Food insecurity screening",
+      highlight: "Differentiated care offerings",
+      executiveBenefit: "Enhanced reputation, patient loyalty, community relations"
     }
   ];
 
@@ -109,10 +121,10 @@ const OncologyLandingPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Measurable Results That Transform Cancer Care
+              Proven Results That Drive Hospital Performance
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Evidence-based solutions that improve patient outcomes and staff satisfaction
+              Evidence-based solutions with measurable impact on your key performance indicators
             </p>
           </div>
           
@@ -133,14 +145,107 @@ const OncologyLandingPage = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-3">
                       {prop.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed mb-4">
                       {prop.description}
                     </p>
+                    <div className="mb-4">
+                      <p className="text-sm font-semibold text-primary mb-2">Key Metrics:</p>
+                      <p className="text-sm text-muted-foreground">{prop.metrics}</p>
+                    </div>
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-sm font-medium text-foreground">Executive Benefit:</p>
+                      <p className="text-sm text-muted-foreground mt-1">{prop.executiveBenefit}</p>
+                    </div>
                   </CardContent>
                 </Card>
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Executive ROI Summary */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <Card className="border-0 bg-card/60 backdrop-blur-sm">
+            <CardContent className="p-8 sm:p-12">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                  Why Hospital Executives Choose Althea Miller Consulting
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                {/* Immediate Impact Areas */}
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Immediate Impact Areas:</h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start">
+                      <TrendingUp className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">Patient Satisfaction Scores</strong> → Direct HCAHPS improvement</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Users className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">Staff Retention Rates</strong> → Reduced recruitment and training costs</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Shield className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">Regulatory Compliance</strong> → Maintained accreditation status</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">Operational Efficiency</strong> → Optimized patient throughput</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Proven Implementation Approach */}
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Proven Implementation:</h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">22 years frontline experience</strong> at academic medical center</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Award className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">OCN certification</strong> with specialized oncology expertise</span>
+                    </li>
+                    <li className="flex items-start">
+                      <TrendingUp className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">Process improvement training</strong> with measurable outcomes</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Heart className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
+                      <span><strong className="text-foreground">Behavioral neuroscience background</strong> for evidence-based solutions</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Executive ROI Promise */}
+                <div className="lg:col-span-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Executive ROI Promise:</h3>
+                  <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
+                    <p className="text-muted-foreground italic leading-relaxed">
+                      "Every initiative I implement is designed to improve your key performance indicators while enhancing the patient and staff experience. My 22 years of proven results speak to my ability to deliver measurable improvements that directly impact your organization's success."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <Button 
+                  variant="cta" 
+                  size="lg"
+                  onClick={scrollToForm}
+                  className="px-8 py-4"
+                >
+                  Schedule Your Strategic Assessment
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
