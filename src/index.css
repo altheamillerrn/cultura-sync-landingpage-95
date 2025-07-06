@@ -8,42 +8,42 @@ All colors MUST be HSL for proper theme integration.
 
 @layer base {
   :root {
-    /* Updated Color Palette */
+    /* Artichoke-Inspired Color Palette */
     --background: 0 0% 100%; /* Pure white */
-    --foreground: 105 14% 33%; /* Dark olive green */
+    --foreground: 220 15% 35%; /* Dark blue-gray */
 
     --card: 0 0% 100%;
-    --card-foreground: 105 14% 33%;
+    --card-foreground: 220 15% 35%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 105 14% 33%;
+    --popover-foreground: 220 15% 35%;
 
-    /* Dark Olive Primary */
-    --primary: 105 14% 33%; /* Dark olive green */
+    /* Teal Primary */
+    --primary: 180 40% 30%; /* Deep teal */
     --primary-foreground: 0 0% 100%;
 
-    /* Medium Gray-Purple Secondary */
-    --secondary: 327 10% 40%; /* Medium grayish purple */
+    /* Purple Secondary */
+    --secondary: 320 20% 60%; /* Mauve purple */
     --secondary-foreground: 0 0% 100%;
 
-    /* Light Pink-Gray Muted */
-    --muted: 338 9% 76%; /* Light pinkish gray */
-    --muted-foreground: 105 14% 33%;
+    /* Light Green Muted */
+    --muted: 90 30% 70%; /* Soft sage green */
+    --muted-foreground: 220 15% 35%;
 
-    /* Accent using lighter version */
-    --accent: 338 9% 85%; /* Lighter pinkish gray */
-    --accent-foreground: 105 14% 33%;
+    /* Beige Accent */
+    --accent: 40 30% 70%; /* Warm beige */
+    --accent-foreground: 220 15% 35%;
 
-    /* CTA using the medium purple */
-    --cta: 327 10% 40%; /* Medium grayish purple */
+    /* Teal CTA */
+    --cta: 180 40% 30%; /* Deep teal */
     --cta-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 338 9% 76%;
-    --input: 338 9% 85%;
-    --ring: 105 14% 33%;
+    --border: 90 30% 80%;
+    --input: 40 30% 85%;
+    --ring: 180 40% 30%;
 
     --radius: 0.5rem;
 
@@ -65,43 +65,43 @@ All colors MUST be HSL for proper theme integration.
   }
 
   .dark {
-    /* Dark Theme with Updated Palette */
-    --background: 105 14% 15%; /* Dark olive background */
-    --foreground: 338 9% 85%; /* Light pinkish gray text */
+    /* Dark Theme - Artichoke Palette */
+    --background: 220 15% 15%; /* Dark blue-gray background */
+    --foreground: 40 30% 85%; /* Light beige text */
 
-    --card: 105 14% 18%; /* Darker cards */
-    --card-foreground: 338 9% 85%;
+    --card: 220 15% 18%; /* Darker cards */
+    --card-foreground: 40 30% 85%;
 
-    --popover: 105 14% 18%;
-    --popover-foreground: 338 9% 85%;
+    --popover: 220 15% 18%;
+    --popover-foreground: 40 30% 85%;
 
-    /* Inverted for dark theme */
-    --primary: 338 9% 76%; /* Light pinkish gray primary */
-    --primary-foreground: 105 14% 15%;
+    /* Lighter teal for dark theme */
+    --primary: 180 40% 50%; /* Lighter teal primary */
+    --primary-foreground: 220 15% 15%;
 
-    --secondary: 327 10% 50%; /* Lighter purple */
-    --secondary-foreground: 338 9% 85%;
+    --secondary: 320 20% 70%; /* Lighter purple */
+    --secondary-foreground: 220 15% 15%;
 
-    --muted: 105 14% 25%; /* Dark muted */
-    --muted-foreground: 338 9% 70%;
+    --muted: 220 15% 25%; /* Dark muted */
+    --muted-foreground: 90 30% 70%;
 
-    --accent: 327 10% 45%; /* Medium purple accent */
-    --accent-foreground: 338 9% 85%;
+    --accent: 90 30% 50%; /* Medium sage accent */
+    --accent-foreground: 220 15% 15%;
 
-    /* CTA for dark */
-    --cta: 327 10% 50%; /* Lighter purple */
-    --cta-foreground: 0 0% 100%;
+    /* Teal CTA for dark */
+    --cta: 180 40% 50%; /* Lighter teal */
+    --cta-foreground: 220 15% 15%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 105 14% 25%;
-    --input: 105 14% 20%;
-    --ring: 338 9% 76%;
+    --border: 220 15% 25%;
+    --input: 220 15% 20%;
+    --ring: 180 40% 50%;
 
     /* Glass-morphism variables */
-    --glass-bg: 105 14% 18% / 0.8;
-    --glass-border: 327 10% 45% / 0.3;
+    --glass-bg: 220 15% 18% / 0.8;
+    --glass-border: 180 40% 45% / 0.3;
     --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   }
 }
