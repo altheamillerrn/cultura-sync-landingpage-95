@@ -8,42 +8,42 @@ All colors MUST be HSL for proper theme integration.
 
 @layer base {
   :root {
-    /* Plant-Based Color Palette */
-    --background: 42 15% 96%; /* Warm Stone */
-    --foreground: 210 24% 16%; /* Charcoal */
+    /* Updated Color Palette */
+    --background: 35 29% 95%; /* Light background */
+    --foreground: 29 17% 30%; /* Dark text */
 
     --card: 0 0% 100%;
-    --card-foreground: 210 24% 16%;
+    --card-foreground: 29 17% 30%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 24% 16%;
+    --popover-foreground: 29 17% 30%;
 
-    /* Deep Forest Green Primary */
-    --primary: 154 60% 21%; /* Deep Forest #1B4332 */
+    /* Dark Green Primary */
+    --primary: 154 31% 22%; /* #254c3d */
     --primary-foreground: 0 0% 98%;
 
-    /* Sage Green Secondary */
-    --secondary: 154 25% 40%; /* Sage Green #52796F */
+    /* Medium Green Secondary */
+    --secondary: 154 23% 51%; /* #65927a */
     --secondary-foreground: 0 0% 98%;
 
-    /* Eucalyptus Muted */
-    --muted: 154 18% 58%; /* Eucalyptus #84A98C */
-    --muted-foreground: 154 60% 21%;
+    /* Beige Muted */
+    --muted: 35 29% 69%; /* #cab69a */
+    --muted-foreground: 154 31% 22%;
 
-    /* Mint Accent */
-    --accent: 154 25% 78%; /* Mint #CAD2C5 */
-    --accent-foreground: 154 60% 21%;
+    /* Light Beige Accent */
+    --accent: 35 29% 82%; /* Lighter version of beige */
+    --accent-foreground: 154 31% 22%;
 
-    /* Terracotta CTA */
-    --cta: 19 62% 40%; /* Terracotta #A0522D */
-    --cta-foreground: 0 0% 98%;
+    /* Coral CTA */
+    --cta: 6 87% 79%; /* #f99b95 */
+    --cta-foreground: 154 31% 22%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 154 25% 78%;
-    --input: 154 18% 90%;
-    --ring: 154 60% 21%;
+    --border: 35 29% 75%;
+    --input: 35 29% 85%;
+    --ring: 154 31% 22%;
 
     --radius: 0.5rem;
 
@@ -65,43 +65,43 @@ All colors MUST be HSL for proper theme integration.
   }
 
   .dark {
-    /* Dark Forest Theme */
-    --background: 154 60% 15%; /* Deep Forest Background */
-    --foreground: 154 25% 90%; /* Light Sage Text */
+    /* Dark Theme with Updated Palette */
+    --background: 29 17% 12%; /* Dark brown background */
+    --foreground: 35 29% 85%; /* Light beige text */
 
-    --card: 154 40% 18%; /* Darker Forest Cards */
-    --card-foreground: 154 25% 90%;
+    --card: 29 17% 15%; /* Darker cards */
+    --card-foreground: 35 29% 85%;
 
-    --popover: 154 40% 18%;
-    --popover-foreground: 154 25% 90%;
+    --popover: 29 17% 15%;
+    --popover-foreground: 35 29% 85%;
 
     /* Inverted for dark theme */
-    --primary: 154 25% 78%; /* Mint Primary */
-    --primary-foreground: 154 60% 21%;
+    --primary: 154 23% 65%; /* Lighter green primary */
+    --primary-foreground: 29 17% 12%;
 
-    --secondary: 154 18% 35%; /* Darker Sage */
-    --secondary-foreground: 154 25% 90%;
+    --secondary: 35 29% 55%; /* Medium beige */
+    --secondary-foreground: 29 17% 12%;
 
-    --muted: 154 20% 25%; /* Dark Eucalyptus */
-    --muted-foreground: 154 18% 70%;
+    --muted: 29 17% 25%; /* Dark muted */
+    --muted-foreground: 35 29% 70%;
 
-    --accent: 154 25% 40%; /* Sage Accent */
-    --accent-foreground: 154 25% 90%;
+    --accent: 154 23% 45%; /* Medium green accent */
+    --accent-foreground: 35 29% 85%;
 
-    /* Keep Terracotta for CTAs */
-    --cta: 19 62% 50%; /* Brighter Terracotta for dark */
-    --cta-foreground: 0 0% 98%;
+    /* Coral CTA for dark */
+    --cta: 6 87% 70%; /* Slightly darker coral */
+    --cta-foreground: 29 17% 12%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 154 20% 25%;
-    --input: 154 20% 22%;
-    --ring: 154 25% 78%;
+    --border: 29 17% 25%;
+    --input: 29 17% 18%;
+    --ring: 154 23% 65%;
 
     /* Glass-morphism variables */
-    --glass-bg: 154 40% 18% / 0.8;
-    --glass-border: 154 25% 40% / 0.3;
+    --glass-bg: 29 17% 15% / 0.8;
+    --glass-border: 154 23% 45% / 0.3;
     --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   }
 }
