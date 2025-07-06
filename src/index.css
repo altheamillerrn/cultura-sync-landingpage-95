@@ -9,41 +9,41 @@ All colors MUST be HSL for proper theme integration.
 @layer base {
   :root {
     /* Updated Color Palette */
-    --background: 35 29% 95%; /* Light background */
-    --foreground: 29 17% 30%; /* Dark text */
+    --background: 0 0% 100%; /* Pure white */
+    --foreground: 105 14% 33%; /* Dark olive green */
 
     --card: 0 0% 100%;
-    --card-foreground: 29 17% 30%;
+    --card-foreground: 105 14% 33%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 29 17% 30%;
+    --popover-foreground: 105 14% 33%;
 
-    /* Dark Green Primary */
-    --primary: 154 31% 22%; /* #254c3d */
-    --primary-foreground: 0 0% 98%;
+    /* Dark Olive Primary */
+    --primary: 105 14% 33%; /* Dark olive green */
+    --primary-foreground: 0 0% 100%;
 
-    /* Medium Green Secondary */
-    --secondary: 154 23% 51%; /* #65927a */
-    --secondary-foreground: 0 0% 98%;
+    /* Medium Gray-Purple Secondary */
+    --secondary: 327 10% 40%; /* Medium grayish purple */
+    --secondary-foreground: 0 0% 100%;
 
-    /* Beige Muted */
-    --muted: 35 29% 69%; /* #cab69a */
-    --muted-foreground: 154 31% 22%;
+    /* Light Pink-Gray Muted */
+    --muted: 338 9% 76%; /* Light pinkish gray */
+    --muted-foreground: 105 14% 33%;
 
-    /* Light Beige Accent */
-    --accent: 35 29% 82%; /* Lighter version of beige */
-    --accent-foreground: 154 31% 22%;
+    /* Accent using lighter version */
+    --accent: 338 9% 85%; /* Lighter pinkish gray */
+    --accent-foreground: 105 14% 33%;
 
-    /* Coral CTA */
-    --cta: 6 87% 79%; /* #f99b95 */
-    --cta-foreground: 154 31% 22%;
+    /* CTA using the medium purple */
+    --cta: 327 10% 40%; /* Medium grayish purple */
+    --cta-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 35 29% 75%;
-    --input: 35 29% 85%;
-    --ring: 154 31% 22%;
+    --border: 338 9% 76%;
+    --input: 338 9% 85%;
+    --ring: 105 14% 33%;
 
     --radius: 0.5rem;
 
@@ -66,42 +66,42 @@ All colors MUST be HSL for proper theme integration.
 
   .dark {
     /* Dark Theme with Updated Palette */
-    --background: 29 17% 12%; /* Dark brown background */
-    --foreground: 35 29% 85%; /* Light beige text */
+    --background: 105 14% 15%; /* Dark olive background */
+    --foreground: 338 9% 85%; /* Light pinkish gray text */
 
-    --card: 29 17% 15%; /* Darker cards */
-    --card-foreground: 35 29% 85%;
+    --card: 105 14% 18%; /* Darker cards */
+    --card-foreground: 338 9% 85%;
 
-    --popover: 29 17% 15%;
-    --popover-foreground: 35 29% 85%;
+    --popover: 105 14% 18%;
+    --popover-foreground: 338 9% 85%;
 
     /* Inverted for dark theme */
-    --primary: 154 23% 65%; /* Lighter green primary */
-    --primary-foreground: 29 17% 12%;
+    --primary: 338 9% 76%; /* Light pinkish gray primary */
+    --primary-foreground: 105 14% 15%;
 
-    --secondary: 35 29% 55%; /* Medium beige */
-    --secondary-foreground: 29 17% 12%;
+    --secondary: 327 10% 50%; /* Lighter purple */
+    --secondary-foreground: 338 9% 85%;
 
-    --muted: 29 17% 25%; /* Dark muted */
-    --muted-foreground: 35 29% 70%;
+    --muted: 105 14% 25%; /* Dark muted */
+    --muted-foreground: 338 9% 70%;
 
-    --accent: 154 23% 45%; /* Medium green accent */
-    --accent-foreground: 35 29% 85%;
+    --accent: 327 10% 45%; /* Medium purple accent */
+    --accent-foreground: 338 9% 85%;
 
-    /* Coral CTA for dark */
-    --cta: 6 87% 70%; /* Slightly darker coral */
-    --cta-foreground: 29 17% 12%;
+    /* CTA for dark */
+    --cta: 327 10% 50%; /* Lighter purple */
+    --cta-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 29 17% 25%;
-    --input: 29 17% 18%;
-    --ring: 154 23% 65%;
+    --border: 105 14% 25%;
+    --input: 105 14% 20%;
+    --ring: 338 9% 76%;
 
     /* Glass-morphism variables */
-    --glass-bg: 29 17% 15% / 0.8;
-    --glass-border: 154 23% 45% / 0.3;
+    --glass-bg: 105 14% 18% / 0.8;
+    --glass-border: 327 10% 45% / 0.3;
     --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   }
 }
