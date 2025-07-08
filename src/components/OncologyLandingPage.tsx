@@ -70,15 +70,10 @@ const OncologyLandingPage = () => {
             
             <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed sm:text-5xl">Intelligent Systems for Human-Centered Oncology</p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex justify-center">
               <Button size="lg" variant="cta" onClick={scrollToForm} className="px-8 py-6 text-lg font-semibold">
                 Schedule Your Oncology Excellence Assessment
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              
-              <Button variant="outline" size="lg" onClick={scrollToForm} className="px-8 py-6 text-lg">
-                Learn More
-                <ChevronDown className="ml-2 h-5 w-5" />
               </Button>
             </div>
           </div>
