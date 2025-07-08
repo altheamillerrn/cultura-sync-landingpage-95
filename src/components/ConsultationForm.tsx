@@ -83,7 +83,7 @@ export const ConsultationForm = () => {
         ...formData,
         sessionId,
         timestamp: new Date().toISOString(),
-        source: "CuraSync Oncology Consulting Landing Page"
+        source: "CulturaSync Oncology Consulting Landing Page"
       };
 
       // Replace with actual webhook URL from GoHighLevel
@@ -110,7 +110,7 @@ export const ConsultationForm = () => {
       console.error("Form submission error:", error);
       toast({
         title: "Submission failed",
-        description: "Please try again or contact us directly at info@curasync.com",
+        description: "Please try again or contact us directly at info@culturasync.com",
         variant: "destructive",
       });
     } finally {
@@ -154,7 +154,7 @@ export const ConsultationForm = () => {
           Get Your Personalized Assessment
         </CardTitle>
         <p className="text-center text-muted-foreground">
-          Share your information to schedule a consultation with our CuraSync team
+          Share your information to schedule a consultation with our CulturaSync team
         </p>
       </CardHeader>
       <CardContent>
