@@ -60,7 +60,14 @@ const OncologyLandingPage = () => {
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            
+            {/* Logo */}
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/81ddb678-5578-49f8-9a50-fdcf9eaf9bbf.png" 
+                alt="CulturaSync Logo" 
+                className="h-20 sm:h-24 mx-auto"
+              />
+            </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               <span className="text-primary">Better Systems.</span>{" "}

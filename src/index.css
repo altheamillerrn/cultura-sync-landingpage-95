@@ -8,35 +8,35 @@ All colors MUST be HSL for proper theme integration.
 
 @layer base {
   :root {
-    /* Artichoke-Inspired Color Palette */
-    --background: 0 0% 100%; /* Pure white */
-    --foreground: 220 15% 35%; /* Dark blue-gray */
+    /* CulturaSync Brand Color Palette */
+    --background: 0 17% 98%; /* Very light pink */
+    --foreground: 0 0% 17%; /* Dark gray */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 15% 35%;
+    --card: 0 17% 98%;
+    --card-foreground: 0 0% 17%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 35%;
+    --popover: 0 17% 98%;
+    --popover-foreground: 0 0% 17%;
 
-    /* Teal Primary */
-    --primary: 180 40% 30%; /* Deep teal */
-    --primary-foreground: 0 0% 100%;
+    /* Purple Primary */
+    --primary: 325 49% 36%; /* Purple/burgundy */
+    --primary-foreground: 0 17% 98%;
 
-    /* Purple Secondary */
-    --secondary: 320 20% 60%; /* Mauve purple */
-    --secondary-foreground: 0 0% 100%;
+    /* Light Mauve Secondary */
+    --secondary: 335 21% 73%; /* Light mauve */
+    --secondary-foreground: 0 0% 17%;
 
-    /* Light Green Muted */
-    --muted: 90 30% 70%; /* Soft sage green */
-    --muted-foreground: 220 15% 35%;
+    /* Light Mauve Muted */
+    --muted: 335 21% 73%; /* Light mauve */
+    --muted-foreground: 0 0% 17%;
 
-    /* Beige Accent */
-    --accent: 40 30% 70%; /* Warm beige */
-    --accent-foreground: 220 15% 35%;
+    /* Dark Teal Accent */
+    --accent: 185 69% 20%; /* Dark teal */
+    --accent-foreground: 0 17% 98%;
 
-    /* Teal CTA */
-    --cta: 180 40% 30%; /* Deep teal */
-    --cta-foreground: 0 0% 100%;
+    /* Purple CTA */
+    --cta: 325 49% 36%; /* Purple/burgundy */
+    --cta-foreground: 0 17% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -65,32 +65,32 @@ All colors MUST be HSL for proper theme integration.
   }
 
   .dark {
-    /* Dark Theme - Artichoke Palette */
-    --background: 220 15% 15%; /* Dark blue-gray background */
-    --foreground: 40 30% 85%; /* Light beige text */
+    /* Dark Theme - CulturaSync Brand */
+    --background: 0 0% 17%; /* Dark gray background */
+    --foreground: 0 17% 98%; /* Light pink text */
 
-    --card: 220 15% 18%; /* Darker cards */
-    --card-foreground: 40 30% 85%;
+    --card: 0 0% 20%; /* Darker cards */
+    --card-foreground: 0 17% 98%;
 
-    --popover: 220 15% 18%;
-    --popover-foreground: 40 30% 85%;
+    --popover: 0 0% 20%;
+    --popover-foreground: 0 17% 98%;
 
-    /* Lighter teal for dark theme */
-    --primary: 180 40% 50%; /* Lighter teal primary */
-    --primary-foreground: 220 15% 15%;
+    /* Lighter purple for dark theme */
+    --primary: 325 49% 50%; /* Lighter purple primary */
+    --primary-foreground: 0 0% 17%;
 
-    --secondary: 320 20% 70%; /* Lighter purple */
-    --secondary-foreground: 220 15% 15%;
+    --secondary: 335 21% 60%; /* Darker mauve */
+    --secondary-foreground: 0 17% 98%;
 
-    --muted: 220 15% 25%; /* Dark muted */
-    --muted-foreground: 90 30% 70%;
+    --muted: 0 0% 25%; /* Dark muted */
+    --muted-foreground: 335 21% 73%;
 
-    --accent: 90 30% 50%; /* Medium sage accent */
-    --accent-foreground: 220 15% 15%;
+    --accent: 185 69% 35%; /* Lighter teal accent */
+    --accent-foreground: 0 17% 98%;
 
-    /* Teal CTA for dark */
-    --cta: 180 40% 50%; /* Lighter teal */
-    --cta-foreground: 220 15% 15%;
+    /* Purple CTA for dark */
+    --cta: 325 49% 50%; /* Lighter purple */
+    --cta-foreground: 0 0% 17%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 98%;
