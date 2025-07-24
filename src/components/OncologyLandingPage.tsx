@@ -156,39 +156,96 @@ const OncologyLandingPage = () => {
 
       {/* About/Expertise Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <Card className="border-0 bg-card/60 backdrop-blur-sm">
             <CardContent className="p-8 sm:p-12">
-              <div className="text-center mb-8">
-                
+              <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
                   From Bedside to Systems: A Journey of Impact
                 </h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                  I'm an Oncology Certified Nurse with 22 years of experience and a deep commitment to care that creates real, lasting change.
+                </p>
               </div>
               
-              
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Over time, I saw how shifting the system could elevate care for every patient, not just those I could personally reach.
-              </p>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                That's why I founded CulturaSync: to help healthcare leaders build better systems and braver cultures where people thrive, communication flows, and human-centered care becomes the standard.
-              </p>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div>
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                    I've walked with patients through uncertainty, with staff through burnout, and with systems through change.
+                  </p>
+                  
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                    Early in my career, I focused on what I could do directly: one patient at a time—through clear education, emotional presence, and fierce advocacy.
+                  </p>
+                  
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                    Over time, I saw how shifting the system could elevate care for every patient, not just those I could personally reach.
+                  </p>
+                </div>
+                
+                <div>
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                    That's why I founded CulturaSync: to help healthcare leaders build better systems and braver cultures—where people thrive, communication flows, and human-centered care becomes the standard.
+                  </p>
+                  
+                  <div className="bg-primary/10 rounded-lg p-6">
+                    <p className="text-lg text-foreground leading-relaxed font-medium">
+                      For clinic leaders, this means fewer breakdowns, stronger patient engagement, and a culture where staff feel seen, safe, and supported.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-              <div className="mb-6">
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">My work focuses on:</p>
-                <ul className="text-lg text-muted-foreground leading-relaxed space-y-2 ml-4">
-                  <li>Patient education and communication</li>
-                  <li>Health equity and identity-affirming practices</li>
-                  <li>Trauma-informed, neurodivergent-aware approaches</li>
-                  <li>Cross-functional collaboration and systems design</li>
-                </ul>
+              <div className="mb-12">
+                <h3 className="text-2xl font-semibold text-foreground text-center mb-8">My work focuses on:</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
+                      <Heart className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-2">Patient Education & Communication</h4>
+                      <p className="text-muted-foreground">That reduce confusion and improve follow-through</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
+                      <Shield className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-2">Health Equity & Identity-Affirming Practices</h4>
+                      <p className="text-muted-foreground">That build trust and deepen access</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
+                      <Users className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-2">Trauma-Informed, Neurodivergent-Aware Approaches</h4>
+                      <p className="text-muted-foreground">That support staff and patients</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
+                      <TrendingUp className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-2">Cross-Functional Collaboration & Systems Design</h4>
+                      <p className="text-muted-foreground">That improve care flow and reduce burnout</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                I bring deep experience in oncology, a passion for process improvement, and a belief that when we build for humans first, everything improves: satisfaction, outcomes, and the ability to stay in the work we love.
-              </p>
+              <div className="text-center bg-secondary/10 rounded-lg p-8 mb-8">
+                <p className="text-lg text-foreground leading-relaxed font-medium">
+                  I bring deep oncology experience, a passion for process improvement, and a belief that when we build for humans first, everything improves—satisfaction, outcomes, and the ability to stay in the work we love.
+                </p>
+              </div>
               
               <div className="text-center">
                 <Button variant="cta" size="lg" onClick={scrollToForm} className="px-8 py-4">
