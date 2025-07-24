@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ConsultationForm } from "./ConsultationForm";
+import Header from "./Header";
 import { ChevronDown, CheckCircle, Users, Heart, TrendingUp, Shield, Award, ArrowRight } from "lucide-react";
 const OncologyLandingPage = () => {
   const scrollToForm = () => {
@@ -56,15 +57,12 @@ const OncologyLandingPage = () => {
   }];
   const socialProofItems = ["22 years oncology nursing experience at academic medical center", "OCN-certified with transformative leadership training", "Proven pre-infusion education program reducing patient anxiety", "EHR super-user with process improvement expertise", "Behavioral neuroscience approach to patient care", "Published presenter on distress management and relational neuroscience"];
   return <div className="min-h-screen bg-background">
+      <Header />
+      
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            {/* Logo */}
-            <div className="mb-8">
-              <img src="/lovable-uploads/81ddb678-5578-49f8-9a50-fdcf9eaf9bbf.png" alt="CulturaSync Logo" className="h-20 sm:h-24 mx-auto" />
-            </div>
-            
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               <span className="text-primary">Better Systems.</span>{" "}
               <span className="text-secondary">Braver Culture.</span>{" "}
