@@ -183,10 +183,10 @@ const OncologyLandingPage = () => {
               <div className="mb-6">
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">My work focuses on:</p>
                 <ul className="text-lg text-muted-foreground leading-relaxed space-y-2 ml-4">
-                  <li>🌟 Patient education and communication</li>
-                  <li>🌟 Health equity and identity-affirming practices</li>
-                  <li>🌟 Trauma-informed, neurodivergent-aware approaches</li>
-                  <li>🌟 Cross-functional collaboration and systems design</li>
+                  <li>Patient education and communication</li>
+                  <li>Health equity and identity-affirming practices</li>
+                  <li>Trauma-informed, neurodivergent-aware approaches</li>
+                  <li>Cross-functional collaboration and systems design</li>
                 </ul>
               </div>
               
