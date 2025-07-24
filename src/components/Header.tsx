@@ -1,16 +1,18 @@
 import React from "react";
-import headerImage from "@/assets/header-image.png";
 
 const Header = () => {
   return (
-    <header className="w-full sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="w-full bg-primary/10 border-b border-border py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center py-4">
-          <img 
-            src={headerImage} 
-            alt="CulturaSync - Transforming Cancer Care Through Evidence-Based Excellence" 
-            className="h-16 sm:h-20 lg:h-24 w-auto object-contain"
-          />
+        <div className="flex justify-center">
+          <div className="text-center">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-2">
+              CulturaSync
+            </h1>
+            <p className="text-sm sm:text-base text-muted-foreground">
+              Transforming Cancer Care Through Evidence-Based Excellence
+            </p>
+          </div>
         </div>
       </div>
     </header>
