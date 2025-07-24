@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ConsultationForm } from "./ConsultationForm";
-import Header from "./Header";
 import { ChevronDown, CheckCircle, Users, Heart, TrendingUp, Shield, Award, ArrowRight } from "lucide-react";
 const OncologyLandingPage = () => {
   const scrollToForm = () => {
@@ -57,12 +56,19 @@ const OncologyLandingPage = () => {
   }];
   const socialProofItems = ["22 years oncology nursing experience at academic medical center", "OCN-certified with transformative leadership training", "Proven pre-infusion education program reducing patient anxiety", "EHR super-user with process improvement expertise", "Behavioral neuroscience approach to patient care", "Published presenter on distress management and relational neuroscience"];
   return <div className="min-h-screen bg-background">
-      <Header />
-      
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
+            {/* Logo */}
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/81ddb678-5578-49f8-9a50-fdcf9eaf9bbf.png" 
+                alt="CulturaSync Logo" 
+                className="h-20 sm:h-24 mx-auto"
+              />
+            </div>
+            
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               <span className="text-primary">Better Systems.</span>{" "}
               <span className="text-secondary">Braver Culture.</span>{" "}
@@ -160,36 +166,29 @@ const OncologyLandingPage = () => {
           <Card className="border-0 bg-card/60 backdrop-blur-sm">
             <CardContent className="p-8 sm:p-12">
               <div className="text-center mb-8">
-                
+                <Badge variant="secondary" className="mb-4 px-4 py-2">
+                  Our Story
+                </Badge>
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
                   From Bedside to Systems: A Journey of Impact
                 </h2>
               </div>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Early in my career, I focused on what I could do directly: one patient at a time with clear education, emotional presence, and fierce advocacy.
+                I'm an Oncology Certified Nurse with 22 years of experience and a lifelong commitment to care that truly changes lives. 
+                I've walked with patients through uncertainty, with staff through burnout, and with systems through change.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Over time, I saw how shifting the system could elevate care for every patient, not just those I could personally reach.
+                Early in my career, I focused on direct impact: one patient at a time through clear education, emotional presence, 
+                and advocacy in the hardest moments. Over time, I realized my impact didn't stop at the bedside.
               </p>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                That's why I founded CulturaSync: to help healthcare leaders build better systems and braver cultures where people thrive, communication flows, and human-centered care becomes the standard.
-              </p>
-
-              <div className="mb-6">
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">My work focuses on:</p>
-                <ul className="text-lg text-muted-foreground leading-relaxed space-y-2 ml-4">
-                  <li>Patient education and communication</li>
-                  <li>Health equity and identity-affirming practices</li>
-                  <li>Trauma-informed, neurodivergent-aware approaches</li>
-                  <li>Cross-functional collaboration and systems design</li>
-                </ul>
-              </div>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                I bring deep experience in oncology, a passion for process improvement, and a belief that when we build for humans first, everything improves: satisfaction, outcomes, and the ability to stay in the work we love.
+                Now I lead improvements in distress screening, create pre-infusion education systems, and build cross-disciplinary 
+                relationships that elevate care for every patient. I'm passionate about relational neuroscience, process improvement, 
+                and building healthcare spaces where compassion flows in every direction—because when systems support people emotionally, 
+                operationally, and equitably, everything improves.
               </p>
               
               <div className="text-center">
