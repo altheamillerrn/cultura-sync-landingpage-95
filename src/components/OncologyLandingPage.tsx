@@ -62,11 +62,7 @@ const OncologyLandingPage = () => {
           <div className="text-center">
             {/* Logo */}
             <div className="mb-8">
-              <img 
-                src="/lovable-uploads/81ddb678-5578-49f8-9a50-fdcf9eaf9bbf.png" 
-                alt="CulturaSync Logo" 
-                className="h-20 sm:h-24 mx-auto"
-              />
+              <img src="/lovable-uploads/81ddb678-5578-49f8-9a50-fdcf9eaf9bbf.png" alt="CulturaSync Logo" className="h-20 sm:h-24 mx-auto" />
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
@@ -166,9 +162,7 @@ const OncologyLandingPage = () => {
           <Card className="border-0 bg-card/60 backdrop-blur-sm">
             <CardContent className="p-8 sm:p-12">
               <div className="text-center mb-8">
-                <Badge variant="secondary" className="mb-4 px-6 py-3 text-lg">
-                  Our Story
-                </Badge>
+                
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
                   From Bedside to Systems: A Journey of Impact
                 </h2>
