@@ -175,7 +175,7 @@ const OncologyLandingPage = () => {
                   </p>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    Early in my career, I focused on what I could do directly: one patient at a time—through clear education, emotional presence, and fierce advocacy.
+                    Early in my career, I focused on what I could do directly: one patient at a time through clear education, emotional presence, and fierce advocacy.
                   </p>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -185,7 +185,7 @@ const OncologyLandingPage = () => {
                 
                 <div>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    That's why I founded CulturaSync: to help healthcare leaders build better systems and braver cultures—where people thrive, communication flows, and human-centered care becomes the standard.
+                    That's why I founded CulturaSync: to help healthcare leaders build better systems and braver cultures where people thrive, communication flows, and human-centered care becomes the standard.
                   </p>
                   
                   <div className="bg-primary/10 rounded-lg p-6">
