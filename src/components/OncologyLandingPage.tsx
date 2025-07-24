@@ -166,7 +166,7 @@ const OncologyLandingPage = () => {
           <Card className="border-0 bg-card/60 backdrop-blur-sm">
             <CardContent className="p-8 sm:p-12">
               <div className="text-center mb-8">
-                <Badge variant="secondary" className="mb-4 px-4 py-2">
+                <Badge variant="secondary" className="mb-4 px-6 py-3 text-lg">
                   Our Story
                 </Badge>
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
