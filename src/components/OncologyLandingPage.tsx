@@ -169,20 +169,29 @@ const OncologyLandingPage = () => {
               </div>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I'm an Oncology Certified Nurse with 22 years of experience and a lifelong commitment to care that truly changes lives. 
-                I've walked with patients through uncertainty, with staff through burnout, and with systems through change.
+                Early in my career, I focused on what I could do directly: one patient at a time with clear education, emotional presence, and fierce advocacy.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Early in my career, I focused on direct impact: one patient at a time through clear education, emotional presence, 
-                and advocacy in the hardest moments. Over time, I realized my impact didn't stop at the bedside.
+                Over time, I saw how shifting the system could elevate care for every patient, not just those I could personally reach.
               </p>
               
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                That's why I founded CulturaSync: to help healthcare leaders build better systems and braver cultures where people thrive, communication flows, and human-centered care becomes the standard.
+              </p>
+
+              <div className="mb-6">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">My work focuses on:</p>
+                <ul className="text-lg text-muted-foreground leading-relaxed space-y-2 ml-4">
+                  <li>🌟 Patient education and communication</li>
+                  <li>🌟 Health equity and identity-affirming practices</li>
+                  <li>🌟 Trauma-informed, neurodivergent-aware approaches</li>
+                  <li>🌟 Cross-functional collaboration and systems design</li>
+                </ul>
+              </div>
+              
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Now I lead improvements in distress screening, create pre-infusion education systems, and build cross-disciplinary 
-                relationships that elevate care for every patient. I'm passionate about relational neuroscience, process improvement, 
-                and building healthcare spaces where compassion flows in every direction—because when systems support people emotionally, 
-                operationally, and equitably, everything improves.
+                I bring deep experience in oncology, a passion for process improvement, and a belief that when we build for humans first, everything improves: satisfaction, outcomes, and the ability to stay in the work we love.
               </p>
               
               <div className="text-center">
