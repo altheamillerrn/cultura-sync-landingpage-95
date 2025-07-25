@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ConsultationForm } from "./ConsultationForm";
-import Header from "./Header";
 import { ChevronDown, CheckCircle, Users, Heart, TrendingUp, Shield, Award, ArrowRight } from "lucide-react";
 const OncologyLandingPage = () => {
   const scrollToForm = () => {
@@ -57,25 +56,41 @@ const OncologyLandingPage = () => {
   }];
   const socialProofItems = ["22 years oncology nursing experience at academic medical center", "OCN-certified with transformative leadership training", "Proven pre-infusion education program reducing patient anxiety", "EHR super-user with process improvement expertise", "Behavioral neuroscience approach to patient care", "Published presenter on distress management and relational neuroscience"];
   return <div className="min-h-screen bg-background">
-      <Header />
-      
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      {/* Hero Section with Logo Space */}
+      <section className="relative pt-12 pb-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
+          {/* Logo Space */}
+          <div className="text-center mb-16">
+            <div className="h-20 flex items-center justify-center mb-8">
+              {/* Logo will be placed here */}
+              <div className="text-2xl font-bold text-primary tracking-wide">
+                [Your Logo Here]
+              </div>
+            </div>
+          </div>
+
+          {/* Main Hero Content */}
           <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              <span className="text-primary">Better Systems.</span>{" "}
-              <span className="text-secondary">Braver Culture.</span>{" "}
-              <span className="text-accent">Human-Centered Care.</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+              <span className="text-primary block mb-2">Better Systems.</span>
+              <span className="text-accent block mb-2">Braver Culture.</span>
+              <span className="text-secondary block">Human-Centered Care.</span>
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed sm:text-4xl">Helping oncology teams reduce burnout, improve communication, and deliver care that truly connects.</p>
+            <p className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-12 max-w-5xl mx-auto leading-relaxed font-medium">
+              Helping oncology teams reduce burnout, improve communication, and deliver care that truly connects.
+            </p>
             
-            <div className="flex justify-center">
-              <Button size="lg" variant="cta" onClick={scrollToForm} className="px-4 py-3 text-base sm:px-6 sm:py-4 sm:text-lg font-semibold">
+            <div className="flex justify-center mb-8">
+              <Button size="lg" variant="cta" onClick={scrollToForm} className="px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300">
                 Schedule Your Workplace Culture Assessment
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-3 h-6 w-6" />
               </Button>
+            </div>
+
+            {/* Scroll Indicator */}
+            <div className="mt-16 animate-bounce">
+              <ChevronDown className="h-8 w-8 text-muted-foreground mx-auto" />
             </div>
           </div>
         </div>
