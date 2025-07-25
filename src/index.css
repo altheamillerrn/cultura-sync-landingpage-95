@@ -8,9 +8,9 @@ All colors MUST be HSL for proper theme integration.
 
 @layer base {
   :root {
-    /* CulturaSync Brand Color Palette */
-    --background: 0 17% 98%; /* Very light pink */
-    --foreground: 0 0% 17%; /* Dark gray */
+    /* CulturaSync Brand Color Palette - Exact Brand Colors */
+    --background: 0 17% 98%; /* #fbf8f8 - Very light pink */
+    --foreground: 0 0% 17%; /* #2c2c2c - Dark gray */
 
     --card: 0 17% 98%;
     --card-foreground: 0 0% 17%;
@@ -19,23 +19,23 @@ All colors MUST be HSL for proper theme integration.
     --popover-foreground: 0 0% 17%;
 
     /* Purple Primary */
-    --primary: 325 49% 36%; /* Purple/burgundy */
+    --primary: 325 51% 36%; /* #8b2e62 - Burgundy/purple */
     --primary-foreground: 0 17% 98%;
 
     /* Light Mauve Secondary */
-    --secondary: 335 21% 73%; /* Light mauve */
+    --secondary: 338 21% 75%; /* #cbb1b9 - Light mauve */
     --secondary-foreground: 0 0% 17%;
 
     /* Light Mauve Muted */
-    --muted: 335 21% 73%; /* Light mauve */
+    --muted: 338 21% 75%; /* #cbb1b9 - Light mauve */
     --muted-foreground: 0 0% 17%;
 
     /* Dark Teal Accent */
-    --accent: 185 69% 20%; /* Dark teal */
+    --accent: 184 70% 20%; /* #0f5257 - Dark teal */
     --accent-foreground: 0 17% 98%;
 
     /* Purple CTA */
-    --cta: 325 49% 36%; /* Purple/burgundy */
+    --cta: 325 51% 36%; /* #8b2e62 - Burgundy/purple */
     --cta-foreground: 0 17% 98%;
 
     --destructive: 0 84.2% 60.2%;
