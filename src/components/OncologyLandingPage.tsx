@@ -69,7 +69,7 @@ const OncologyLandingPage = () => {
               <span className="text-accent">Human-Centered Care.</span>
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed sm:text-5xl">Intelligent Systems for Human-Centered Oncology</p>
+            <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed sm:text-4xl">Helping oncology teams reduce burnout, improve communication, and deliver care that truly connects.</p>
             
             <div className="flex justify-center">
               <Button size="lg" variant="cta" onClick={scrollToForm} className="px-4 py-3 text-base sm:px-6 sm:py-4 sm:text-lg font-semibold">
