@@ -259,7 +259,7 @@ const OncologyLandingPage = () => {
               
               <div className="text-center bg-secondary/10 rounded-lg p-8 mb-8">
                 <p className="text-lg text-foreground leading-relaxed font-medium">
-                  I bring deep oncology experience, a passion for process improvement, and a belief that when we build for humans first, everything improves—satisfaction, outcomes, and the ability to stay in the work we love.
+                  I bring deep oncology experience, a passion for process improvement, and a belief that when we build for humans first, everything improves: satisfaction, outcomes, and the ability to stay in the work we love.
                 </p>
               </div>
               
