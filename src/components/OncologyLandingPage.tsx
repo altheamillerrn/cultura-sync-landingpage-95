@@ -180,7 +180,7 @@ const OncologyLandingPage = () => {
                   From Bedside to Systems: A Journey of Impact
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                  I'm an Oncology Certified Nurse with 22 years of experience and a deep commitment to care that creates real, lasting change.
+                  Founder of CulturaSync, oncology RN, and systems strategist focused on rehumanizing care through culture transformation.
                 </p>
               </div>
               
