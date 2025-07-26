@@ -2,12 +2,12 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-
+import { ConsultationForm } from "./ConsultationForm";
 import { ChevronDown, CheckCircle, Users, Heart, TrendingUp, Shield, Award, ArrowRight } from "lucide-react";
 const OncologyLandingPage = () => {
   const scrollToForm = () => {
-    const calendarElement = document.getElementById('scheduling-calendar');
-    calendarElement?.scrollIntoView({
+    const formElement = document.getElementById('consultation-form');
+    formElement?.scrollIntoView({
       behavior: 'smooth'
     });
   };
@@ -277,49 +277,20 @@ const OncologyLandingPage = () => {
       {/* Social Proof */}
       
 
-      {/* Direct Scheduling Section */}
-      <section id="scheduling-calendar" className="py-20 px-4 sm:px-6 lg:px-8 bg-accent/10 border-t border-border">
-        <div className="max-w-4xl mx-auto">
+      {/* Consultation Form Section */}
+      <section id="consultation-form" className="py-20 px-4 sm:px-6 lg:px-8 bg-accent/10 border-t border-border">
+        <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Schedule Your Oncology Excellence Assessment
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Book your consultation directly - let's discuss how we can transform your cancer care delivery together
+            <p className="text-xl text-muted-foreground">
+              Let's discuss how we can transform your cancer care delivery together
             </p>
-            <div className="bg-primary/10 rounded-lg p-4 mb-8">
-              <p className="text-sm text-muted-foreground">
-                <strong>Assessment includes:</strong> Workplace culture evaluation, patient experience review, staff wellness analysis, and customized improvement roadmap
-              </p>
-            </div>
           </div>
           
-          <div className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
-            <iframe 
-              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2JPKcQUIA8HpXN98_fAtGfnKeCACQGcdIcGANDRwudK1fyOYnc9MC-lDDugXkMl4Cl1a6mPk07?gv=true" 
-              style={{ border: 0 }} 
-              width="100%" 
-              height="600" 
-              frameBorder="0"
-              title="Schedule your oncology excellence assessment"
-              className="min-h-[600px]"
-            />
-          </div>
-          
-          <div className="text-center mt-8">
-            <p className="text-sm text-muted-foreground mb-4">
-              Having trouble with the calendar? Contact me directly:
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <a href="https://www.linkedin.com/in/althea-miller/" target="_blank" rel="noopener noreferrer" 
-                 className="text-primary hover:text-primary/80 transition-colors font-medium">
-                LinkedIn Message
-              </a>
-              <span className="text-muted-foreground">|</span>
-              <span className="text-muted-foreground">
-                Email: contact@culturasync.com
-              </span>
-            </div>
+          <div className="w-full">
+            <ConsultationForm />
           </div>
         </div>
       </section>
