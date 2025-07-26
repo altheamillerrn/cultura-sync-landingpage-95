@@ -15,7 +15,6 @@ interface FormData {
   organization: string;
   role: string;
   primaryChallenge: string;
-  honeypot?: string; // Anti-spam field
 }
 
 export const ConsultationForm = () => {
@@ -29,11 +28,8 @@ export const ConsultationForm = () => {
     phone: "",
     organization: "",
     role: "",
-    primaryChallenge: "",
-    honeypot: ""
+    primaryChallenge: ""
   });
-  const [submissionCount, setSubmissionCount] = useState(0);
-  const [lastSubmissionTime, setLastSubmissionTime] = useState(0);
 
   const [errors, setErrors] = useState<Partial<FormData>>({});
 
@@ -70,23 +66,6 @@ export const ConsultationForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Security: Check for honeypot field (should be empty)
-    if (formData.honeypot && formData.honeypot.trim() !== "") {
-      console.warn("Potential spam submission detected");
-      return;
-    }
-
-    // Security: Rate limiting - max 3 submissions per minute
-    const now = Date.now();
-    if (now - lastSubmissionTime < 20000 && submissionCount >= 3) {
-      toast({
-        title: "Too many requests",
-        description: "Please wait before submitting again.",
-        variant: "destructive",
-      });
-      return;
-    }
-
     if (!validateForm()) {
       toast({
         title: "Please correct the errors",
@@ -97,24 +76,18 @@ export const ConsultationForm = () => {
     }
 
     setIsSubmitting(true);
-    setSubmissionCount(prev => prev + 1);
-    setLastSubmissionTime(now);
 
     try {
       const sessionId = generateSessionId();
-      const { honeypot, ...cleanFormData } = formData; // Remove honeypot from submission
       const webhookData = {
-        ...cleanFormData,
+        ...formData,
         sessionId,
         timestamp: new Date().toISOString(),
         source: "CulturaSync Oncology Consulting Landing Page"
       };
 
-      // TODO: Replace with actual GoHighLevel webhook URL
-      // Current placeholder URL will cause submissions to fail safely
-      const webhookUrl = process.env.NODE_ENV === 'production' 
-        ? "https://services.leadconnectorhq.com/hooks/REPLACE_WITH_ACTUAL_WEBHOOK_ID"
-        : "https://services.leadconnectorhq.com/hooks/dev-webhook-placeholder";
+      // Replace with actual webhook URL from GoHighLevel
+      const webhookUrl = "https://services.leadconnectorhq.com/hooks/your-webhook-id";
       
       const response = await fetch(webhookUrl, {
         method: "POST",
@@ -131,25 +104,15 @@ export const ConsultationForm = () => {
           description: "We'll contact you within 24 hours to schedule your assessment.",
         });
       } else {
-        throw new Error(`Webhook request failed with status: ${response.status}`);
+        throw new Error("Failed to submit form");
       }
     } catch (error) {
       console.error("Form submission error:", error);
-      
-      // Provide helpful fallback without exposing technical details
       toast({
-        title: "Unable to submit request",
-        description: "Please contact us directly at contact@culturasync.com or via LinkedIn.",
+        title: "Submission failed",
+        description: "Please try again or contact us directly at info@culturasync.com",
         variant: "destructive",
       });
-      
-      // Show alternative contact methods
-      setTimeout(() => {
-        toast({
-          title: "Alternative contact options",
-          description: "LinkedIn: linkedin.com/in/althea-miller/ | Email: contact@culturasync.com",
-        });
-      }, 3000);
     } finally {
       setIsSubmitting(false);
     }
@@ -309,17 +272,6 @@ export const ConsultationForm = () => {
               <p className="text-sm text-destructive">{errors.primaryChallenge}</p>
             )}
           </div>
-
-          {/* Honeypot field for spam protection - hidden from users */}
-          <input
-            type="text"
-            name="website"
-            value={formData.honeypot || ""}
-            onChange={(e) => handleInputChange("honeypot", e.target.value)}
-            style={{ display: "none" }}
-            tabIndex={-1}
-            autoComplete="off"
-          />
 
           <Button
             type="submit"
