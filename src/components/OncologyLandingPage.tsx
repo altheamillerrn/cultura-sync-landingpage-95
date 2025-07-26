@@ -62,11 +62,7 @@ const OncologyLandingPage = () => {
           {/* Logo Space */}
           <div className="text-center mb-16">
             <div className="h-24 sm:h-28 lg:h-32 flex items-center justify-center mb-8">
-              <img 
-                src="/lovable-uploads/81ddb678-5578-49f8-9a50-fdcf9eaf9bbf.png" 
-                alt="CulturaSync Logo - Transforming Oncology Care Through Culture Excellence"
-                className="h-full w-auto max-w-xs sm:max-w-sm lg:max-w-md object-contain hover:scale-105 transition-transform duration-300"
-              />
+              <img src="/lovable-uploads/81ddb678-5578-49f8-9a50-fdcf9eaf9bbf.png" alt="CulturaSync Logo - Transforming Oncology Care Through Culture Excellence" className="h-full w-auto max-w-xs sm:max-w-sm lg:max-w-md object-contain hover:scale-105 transition-transform duration-300" />
             </div>
           </div>
 
@@ -179,9 +175,8 @@ const OncologyLandingPage = () => {
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
                   From Bedside to Systems: A Journey of Impact
                 </h2>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                  Founder of CulturaSync, oncology RN, and systems strategist focused on rehumanizing care through culture transformation.
-                </p>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">I am an Oncology Certified Nurse with 22 years of experience focused on 
+rehumanizing care through culture transformation.</p>
               </div>
               
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
