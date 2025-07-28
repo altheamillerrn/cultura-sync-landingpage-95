@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ConsultationForm } from "./ConsultationForm";
+import { CalendarModal } from "./CalendarModal";
 import { ChevronDown, CheckCircle, Users, Heart, TrendingUp, Shield, Award, ArrowRight } from "lucide-react";
 const OncologyLandingPage = () => {
+  const [isCalendarModalOpen, setIsCalendarModalOpen] = useState(false);
+  
   const scrollToForm = () => {
     const formElement = document.getElementById('consultation-form');
     formElement?.scrollIntoView({
       behavior: 'smooth'
     });
+  };
+  
+  const openCalendarModal = () => {
+    setIsCalendarModalOpen(true);
   };
   const valuePropositions = [{
     icon: TrendingUp,
@@ -62,7 +69,7 @@ const OncologyLandingPage = () => {
           {/* Logo Space */}
           <div className="text-center mb-16">
             <div className="h-24 sm:h-28 lg:h-32 flex items-center justify-center mb-8">
-              <img src="/lovable-uploads/81ddb678-5578-49f8-9a50-fdcf9eaf9bbf.png" alt="CulturaSync Logo - Transforming Oncology Care Through Culture Excellence" className="h-full w-auto max-w-xs sm:max-w-sm lg:max-w-md object-contain hover:scale-105 transition-transform duration-300" />
+              <img src="/culturasync-logo.svg" alt="CulturaSync Logo - Transforming Oncology Care Through Culture Excellence" className="h-full w-auto max-w-xs sm:max-w-sm lg:max-w-md object-contain hover:scale-105 transition-transform duration-300" />
             </div>
           </div>
 
@@ -79,7 +86,7 @@ const OncologyLandingPage = () => {
             </p>
             
             <div className="flex justify-center mb-8">
-              <Button size="lg" variant="cta" onClick={scrollToForm} className="px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300">
+              <Button size="lg" variant="cta" onClick={openCalendarModal} className="px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300">
                 Schedule Your Workplace Culture Assessment
                 <ArrowRight className="ml-3 h-6 w-6" />
               </Button>
@@ -156,7 +163,7 @@ const OncologyLandingPage = () => {
               </div>
 
               <div className="text-center">
-                <Button variant="cta" size="lg" onClick={scrollToForm} className="px-8 py-4">
+                <Button variant="cta" size="lg" onClick={openCalendarModal} className="px-8 py-4">
                   Schedule Your Strategic Assessment
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -259,7 +266,7 @@ rehumanizing care through culture transformation.</p>
               </div>
               
               <div className="text-center">
-                <Button variant="cta" size="lg" onClick={scrollToForm} className="px-8 py-4">
+                <Button variant="cta" size="lg" onClick={openCalendarModal} className="px-8 py-4">
                   Start Your Transformation Journey
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -309,6 +316,12 @@ rehumanizing care through culture transformation.</p>
           </div>
         </div>
       </footer>
+      
+      {/* Calendar Modal */}
+      <CalendarModal 
+        isOpen={isCalendarModalOpen} 
+        onClose={() => setIsCalendarModalOpen(false)} 
+      />
     </div>;
 };
 export default OncologyLandingPage;
