@@ -163,7 +163,7 @@ const OncologyLandingPage = () => {
               </div>
 
               <div className="text-center">
-                <Button variant="cta" size="lg" onClick={openCalendarModal} className="px-8 py-4">
+                <Button variant="cta" size="lg" onClick={openCalendarModal} className="px-8 py-4 text-lg">
                   Schedule Your Strategic Assessment
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
