@@ -311,7 +311,7 @@ rehumanizing care through culture transformation.</p>
               Available for speaking engagements and continuing education trainings. Contact me for more information.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-              <a href="https://www.linkedin.com/in/althea-miller/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn Profile</a>
+              <a href="https://www.linkedin.com/in/althea-miller/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-base">LinkedIn Profile</a>
               <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
             </div>
           </div>
