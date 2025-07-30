@@ -304,13 +304,14 @@ rehumanizing care through culture transformation.</p>
             <h3 className="text-xl font-semibold text-foreground mb-4">
               CulturaSync
             </h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground mb-4">
               Transforming Cancer Care Through Evidence-Based Excellence
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Available for speaking engagements and continuing education trainings. Contact me for more information.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
               <a href="https://www.linkedin.com/in/althea-miller/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn Profile</a>
-              <a href="#" className="hover:text-primary transition-colors">Professional Speaking</a>
-              <a href="#" className="hover:text-primary transition-colors">Continuing Education Resources</a>
               <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
             </div>
           </div>
