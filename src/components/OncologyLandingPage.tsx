@@ -301,18 +301,29 @@ rehumanizing care through culture transformation.</p>
       <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/10 border-t border-border">
         <div className="max-w-4xl mx-auto">
           <div className="text-center">
-            <h3 className="text-xl font-semibold text-foreground mb-4">
+            <h3 className="text-3xl font-semibold text-accent mb-4">
               CulturaSync
             </h3>
-            <p className="text-muted-foreground mb-4">
+            <p className="text-muted-foreground mb-6">
               Transforming Cancer Care Through Evidence-Based Excellence
             </p>
+            <div className="mb-6">
+              <Button 
+                variant="outline" 
+                size="lg"
+                asChild
+                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+              >
+                <a href="https://www.linkedin.com/in/althea-miller/" target="_blank" rel="noopener noreferrer">
+                  LinkedIn Profile
+                </a>
+              </Button>
+            </div>
             <p className="text-muted-foreground mb-6">
               Available for speaking engagements and continuing education trainings. Contact me for more information.
             </p>
-            <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-              <a href="https://www.linkedin.com/in/althea-miller/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-base">LinkedIn Profile</a>
-              <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
+            <div className="flex justify-center">
+              <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a>
             </div>
           </div>
         </div>
